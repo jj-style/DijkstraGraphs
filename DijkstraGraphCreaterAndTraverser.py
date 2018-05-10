@@ -16,6 +16,7 @@ class App():
         self.tickspeed = 16
     def begin(self):
         pygame.init()
+        pygame.mixer.quit()
         pygame.display.set_caption("Graph Generator")
         self.screen = pygame.display.set_mode((self.screenx, self.screeny))
         self.clock = pygame.time.Clock()
